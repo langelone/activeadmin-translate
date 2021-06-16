@@ -1,4 +1,4 @@
-@import "active_admin/mixins";
+@import "~@activeadmin/activeadmin/src/scss/mixins";
 
 .active_admin {
 
@@ -7,17 +7,24 @@
     margin-right: 10px;
     margin-bottom: -1px;
 
+    list-style: none;
+    overflow-y: hidden;
+    padding-left: 20px;
+    margin-top: 20px;
+
     li {
       @include section-header;
 
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
 
-      float: right;
-
       margin-bottom: 0;
       padding-left: 0;
       padding-right: 0;
+
+      float: left;
+      border: none;
+      text-shadow: none;
 
       a {
         padding: .5em 1em;
